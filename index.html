@@ -1,11 +1,58 @@
+<!doctype html>
 <html>
-
+<head>
+  <meta charset="utf-8">
+  <title>9.0°Shepherdz — healthew0rld</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{background:#000;color:#c8ffc8;font-family:monospace;margin:0;text-align:center}
+    .wrap{max-width:800px;margin:28px auto;padding:0 16px}
+    img{max-width:100%}
+    a{color:#9effff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    hr{border:0;border-top:1px dashed #39ff14;margin:18px auto;max-width:680px}
+    .blink{animation:blink 1s steps(2,start) infinite}
+    @keyframes blink{to{visibility:hidden}}
+    .btn{display:inline-block;margin:6px 6px 0 6px;padding:6px 10px;border:1px solid #2af3ff;border-radius:6px}
+  </style>
+</head>
 <body>
-  <h1>9.0'Shepherdz</h1>
+<div class="wrap">
+
+  <!-- YOUR ORIGINAL CONTENT (kept exactly) -->
+  <h1>9.0°Shepherdz</h1>
   <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="ice cream gif">
+
+  <hr>
+
+  <!-- NEW: Y2K MUSIC SECTION -->
+  <h2 style="margin:10px 0 6px;">900shepherd <span class="blink">_</span></h2>
+
+  <!-- retro marquee -->
+  <marquee behavior="scroll" direction="left" scrollamount="6" style="max-width:680px;margin:8px auto;background:#030;color:#9effff;border:1px dashed #39ff14;padding:6px">
+    ★ debut single • <b>student_</b> • label: star9000 • bright • 126 bpm ★
+  </marquee>
+
+  <!-- cover (you already uploaded cover.jpg) -->
+  <p style="margin:14px 0;">
+    <img src="cover.jpg" alt="student_ cover art" width="300" style="border:2px solid #39ff14;border-radius:6px">
+  </p>
+
+  <!-- streaming links: replace # with real URLs when live -->
+  <p>
+    <a class="btn" href="#" target="_blank" rel="noopener">Spotify</a>
+    <a class="btn" href="#" target="_blank" rel="noopener">Apple Music</a>
+    <a class="btn" href="#" target="_blank" rel="noopener">YouTube Music</a>
+  </p>
+
+  <hr>
+
+  <p style="font-size:12px;color:#69a569">© <span id="y"></span> 900shepherd · star9000</p>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
-
 </html>
-
-
