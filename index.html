@@ -2,66 +2,37 @@
 
 <body>
 
-  <!-- ===== Y2K COLLAGE HEADER ===== -->
-<style>
-  /* only styles the collage header */
-  .y2k-header{
-    position:relative; width:100%; min-height:280px; padding:14px 10px;
-    background:#fff; overflow:hidden; border-bottom:4px dashed hotpink;
-  }
-  .y2k-grid{
-    display:grid; grid-template-columns:repeat(12, 1fr); grid-auto-rows:60px;
-    gap:8px; max-width:1200px; margin:0 auto;
-    filter:saturate(1.2) contrast(1.05);
-  }
-  .y2k-grid img{
-    width:100%; height:100%; object-fit:cover; image-rendering:pixelated;
-    border:2px solid #ddd; box-shadow:0 2px 10px rgba(0,0,0,.12);
-  }
-  /* make some tiles bigger for that messy collage feel */
-  .w2{grid-column:span 2} .w3{grid-column:span 3}
-  .h2{grid-row:span 2} .h3{grid-row:span 3}
+ 
+  <!-- ===== Y2K Header Banner ===== -->
+<div style="padding:20px; background:#fff; border-bottom:3px solid #ccc; text-align:center;">
+  <h3 style="font-family:system-ui; color:#444; margin-bottom:14px;">
+    Welcome to My Inner Web
+  </h3>
 
-  /* center “ad panel” */
-  .y2k-panel{
-    position:absolute; inset:auto 0 14px 0; margin:auto; width:min(680px,92vw);
-    background:#fff; border:2px solid #111; border-radius:14px;
-    box-shadow:0 10px 30px rgba(0,0,0,.18);
-    text-align:center; padding:12px 14px;
-  }
-  .y2k-panel h1{margin:4px 0 6px; font:700 22px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Arial}
-  .y2k-pill{
-    display:inline-block; padding:6px 12px; border-radius:999px; margin:6px 6px 0;
-    border:1px solid #dfe7f0;
-    background:linear-gradient(180deg,#fff,#eef8ff);
-    font:600 13px/1 system-ui,-apple-system,Segoe UI,Roboto,Arial;
-  }
-  .y2k-cta{
-    display:inline-block; margin:10px 6px 6px; padding:10px 16px; border-radius:999px;
-    background:#111; color:#fff; text-decoration:none; font-weight:700;
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
-  }
-</style>
-
-<header class="y2k-header">
-  <!-- collage tiles (replace src with your GIFs later) -->
-  <div class="y2k-grid">
-    <img class="w2 h2" src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" alt="">
-    <img class="w3" src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="">
-    <img class="h2" src="https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif" alt="">
-    <img class=""   src="https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif" alt="">
-    <img class="w2" src="https://media.giphy.com/media/l0MYwONBGDS7aPGOk/giphy.gif" alt="">
-    <img class="w3 h2" src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" alt="">
-    <img class=""   src="https://media.giphy.com/media/26Ff4E1xQ4JWbxu08/giphy.gif" alt="">
-    <img class="w2" src="https://media.giphy.com/media/3o6Zt8MgUuvSbkZYWc/giphy.gif" alt="">
-    <img class="h2" src="https://media.giphy.com/media/3oEduSbSGpGaRX2Vri/giphy.gif" alt="">
-    <img class=""   src="https://media.giphy.com/media/3o6gE5aYp2hQ9Y5qco/giphy.gif" alt="">
-    <img class="w2" src="https://media.giphy.com/media/3o6nUPcqA1Q0qv0ZyI/giphy.gif" alt="">
-    <img class=""   src="https://media.giphy.com/media/3o6nUQv1Q0qv0Zz0tG/giphy.gif" alt="">
+  <!-- banner row -->
+  <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:12px;">
+    <img src="https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif" 
+         alt="y2k aesthetic" width="468" height="60" 
+         style="border:1px solid #ddd; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,.12)">
+    <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" 
+         alt="funny meme gif" width="234" height="60" 
+         style="border:1px solid #ddd; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,.12)">
   </div>
 
+  <!-- blinkies strip -->
+  <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:16px;">
+    <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/l0MYyDa8G8EHG5gJm/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/l0MYwONBGDS7aPGOk/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/l0MYLwQ4zZcKQeUv2/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+  </div>
 
-</header>
+  <p style="color:#777; font-size:12px; margin:6px 0 0;">
+    Your daily dose of ✦ Y2K ✦ memes ✦ nostalgia ✦
+  </p>
+</div>
+<!-- ===== /Y2K Header Banner ===== -->
+
 
 
   
@@ -84,35 +55,36 @@
   </div>
 </div>
 
-  <!-- collage tiles (replace src with your GIFs later) -->
-  <!-- Y2K “Fake Ads” Meme Block (Bottom) -->
-<div style="padding:20px; margin-top:30px; background:#fff; border-top:4px dashed hotpink; text-align:center;">
-  <h3 style="font-family:system-ui; color:#444; margin-bottom:12px;">Sponsored by My Inner Web</h3>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+ 
+<!-- ===== Y2K Ad Strip (Renewed) ===== -->
+<div style="padding:20px; background:#fff; border-top:3px solid #ccc; text-align:center;">
+  <h3 style="font-family:system-ui; color:#444; margin-bottom:14px;">
+    Sponsored by My Inner Web
+  </h3>
 
-    <!-- Chaotic meme GIF -->
-    <div style="border:2px solid #ddd; padding:4px; width:160px;">
-      <img src="https://i.pcmag.com/imagery/roundups/03ffVTPKyQ0Yz0SeQ5pbIiA-3.fit_lim.size_480x270.v1623395168.png" alt="Y2K collage" style="width:100%; border:none;">
-    </div>
-
-    <!-- Flamboyant chat GIF -->
-    <div style="border:2px solid #ddd; padding:4px; width:140px;">
-      <img src="https://i.pinimg.com/originals/27/18/4a/27184a5bef4d61b952bb72979f2aa1bf.gif" alt="Flamboyant Y2K chat" style="width:100%; border:none;">
-    </div>
-
-    <!-- PicMix Y2K blend -->
-    <div style="border:2px solid #ddd; padding:4px; width:140px;">
-      <img src="https://i.pinimg.com/originals/cd/ed/0c/cded0cb0b10cbceb06d7dbabc63ec465.gif" alt="PicMix Y2K" style="width:100%; border:none;">
-    </div>
-
-    <!-- LPS Pastel collage -->
-    <div style="border:2px solid #ddd; padding:4px; width:160px;">
-      <img src="https://i.pinimg.com/originals/48/05/ba/4805bab667ef7ecbc5d9750050e6015a.gif" alt="LPS Y2K baddie" style="width:100%; border:none;">
-    </div>
-
+  <!-- banner row -->
+  <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:12px;">
+    <a href="#music"><img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" 
+         alt="ad banner" width="468" height="60" 
+         style="border:1px solid #ddd; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,.12)"></a>
+    <a href="#music"><img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" 
+         alt="ad banner" width="234" height="60" 
+         style="border:1px solid #ddd; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,.12)"></a>
   </div>
-  <p style="color:#666; font-size:12px; margin-top:6px;">Totally not a real ad. But if it were, it'd be awesome.</p>
+
+  <!-- blinkies strip -->
+  <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:16px;">
+    <img src="https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+    <img src="https://media.giphy.com/media/l0MYwONBGDS7aPGOk/giphy.gif" width="88" height="31" style="image-rendering:pixelated; border:1px solid #eee">
+  </div>
+
+  <p style="color:#777; font-size:12px; margin:6px 0 0;">
+  </p>
 </div>
+<!-- ===== /Y2K Ad Strip ===== -->
+
 
   
 </body>
