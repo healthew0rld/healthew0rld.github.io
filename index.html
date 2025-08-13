@@ -1,58 +1,91 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>9.0°Shepherdz — healthew0rld</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body{background:#000;color:#c8ffc8;font-family:monospace;margin:0;text-align:center}
-    .wrap{max-width:800px;margin:28px auto;padding:0 16px}
-    img{max-width:100%}
-    a{color:#9effff;text-decoration:none}
-    a:hover{text-decoration:underline}
-    hr{border:0;border-top:1px dashed #39ff14;margin:18px auto;max-width:680px}
-    .blink{animation:blink 1s steps(2,start) infinite}
-    @keyframes blink{to{visibility:hidden}}
-    .btn{display:inline-block;margin:6px 6px 0 6px;padding:6px 10px;border:1px solid #2af3ff;border-radius:6px}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>900shepherd — student_ (star9000)</title>
+<style>
+  /* ===== Frutiger Aero 2000s ===== */
+  :root{
+    --bg1:#E7F5FF;   /* light sky */
+    --bg2:#CFF8E6;   /* mint */
+    --card:#ffffffcc;
+    --text:#0b1220;
+    --muted:#5c6b7b;
+    --accent:#00b3ff;   /* aqua */
+    --accent2:#00d18f;  /* mint */
+  }
+  html,body{height:100%;margin:0}
+  body{
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(1200px 600px at 20% -10%, #aee9ff80, #0000 60%),
+      radial-gradient(900px 700px at 110% 110%, #bfffe780, #0000 60%),
+      linear-gradient(160deg,var(--bg1),var(--bg2));
+  }
+  .wrap{max-width:760px;margin:40px auto;padding:0 16px}
+  header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .logo{font-weight:800;letter-spacing:.02em}
+  .badge{
+    font-size:12px;padding:4px 10px;border-radius:999px;
+    background:linear-gradient(180deg,#eafcff,#d6fff2);
+    border:1px solid #dae8f2;color:#199e7c;
+  }
+  .card{
+    background:var(--card); backdrop-filter: blur(8px);
+    border:1px solid #e6eef6; border-radius:18px; padding:18px;
+    box-shadow:0 20px 60px #0000001a, inset 0 1px 0 #ffffff80;
+  }
+  .title{font-size:26px;font-weight:800;margin:2px 0 8px}
+  .subtitle{color:var(--muted);margin:0 0 14px}
+  .cover{
+    width:280px; max-width:90vw; border-radius:14px; display:block; margin:6px auto 14px;
+    box-shadow:0 10px 30px #73e0ff40, 0 0 0 1px #e6eef6;
+  }
+  .buttons{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .btn{
+    appearance:none; text-decoration:none; color:#0b1220; font-weight:600; font-size:14px;
+    padding:10px 14px; border-radius:999px; border:1px solid #d7e7f3;
+    background:linear-gradient(180deg,#ffffff,#e9f6ff);
+    box-shadow:
+      inset 0 1px 0 #ffffff,
+      0 6px 18px #86e8ff4d;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(-1px); box-shadow: inset 0 1px 0 #ffffff,0 10px 22px #86e8ff66}
+  .btn.primary{border-color:#bfeaff;background:linear-gradient(180deg,#e8fbff,#d8f4ff)}
+  footer{color:var(--muted);text-align:center;margin:24px 0 10px;font-size:12px}
+</style>
 </head>
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <header>
+      <div class="logo">900shepherd</div>
+      <span class="badge">star9000</span>
+    </header>
 
-  <!-- YOUR ORIGINAL CONTENT (kept exactly) -->
-  <h1>9.0°Shepherdz</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="ice cream gif">
+    <section class="card">
+      <div class="title">student_</div>
+      <p class="subtitle">debut single — out now</p>
 
-  <hr>
+      <!-- your cover image in repo root -->
+      <img class="cover" src="cover.jpg" alt="student_ cover art">
 
-  <!-- NEW: Y2K MUSIC SECTION -->
-  <h2 style="margin:10px 0 6px;">900shepherd <span class="blink">_</span></h2>
+      <div class="buttons">
+        <!-- replace # with real links when they’re live -->
+        <a class="btn primary" href="#" target="_blank" rel="noopener">Spotify</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Apple Music</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">YouTube Music</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Deezer</a>
+      </div>
+    </section>
 
-  <!-- retro marquee -->
-  <marquee behavior="scroll" direction="left" scrollamount="6" style="max-width:680px;margin:8px auto;background:#030;color:#9effff;border:1px dashed #39ff14;padding:6px">
-    ★ debut single • <b>student_</b> • label: star9000 • bright • 126 bpm ★
-  </marquee>
-
-  <!-- cover (you already uploaded cover.jpg) -->
-  <p style="margin:14px 0;">
-    <img src="cover.jpg" alt="student_ cover art" width="300" style="border:2px solid #39ff14;border-radius:6px">
-  </p>
-
-  <!-- streaming links: replace # with real URLs when live -->
-  <p>
-    <a class="btn" href="#" target="_blank" rel="noopener">Spotify</a>
-    <a class="btn" href="#" target="_blank" rel="noopener">Apple Music</a>
-    <a class="btn" href="#" target="_blank" rel="noopener">YouTube Music</a>
-  </p>
-
-  <hr>
-
-  <p style="font-size:12px;color:#69a569">© <span id="y"></span> 900shepherd · star9000</p>
-</div>
+    <footer>© <span id="y"></span> 900shepherd · star9000</footer>
+  </div>
 
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
+  document.getElementById('y').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
