@@ -3,38 +3,31 @@
 <body>
 
  
-<!-- ===== Y2K HEADER COLLAGE ===== -->
-<style>
-  .y2k-wrap{
-    max-width:1000px;margin:0 auto;padding:20px 16px
-  }
-  .y2k-grid{
-    display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:8px
-  }
-  .y2k-tile img{
-    width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid #ddd;
-    box-shadow:0 3px 12px rgba(0,0,0,.12)
-  }
-  .w2{grid-column:span 2}.w3{grid-column:span 3}
-  .h2{grid-row:span 2}.h3{grid-row:span 3}
-  @media (max-width:720px){
-    .y2k-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:90px}
-  }
-</style>
+<!-- ===== HEADER GIF STRIP (working) ===== -->
+<div style="max-width:900px;margin:0 auto;padding:20px 16px 10px;text-align:center;border-bottom:3px solid #ccc;">
+  <h3 style="font-family:system-ui;color:#444;margin-bottom:14px;">Welcome to My Inner Web</h3>
 
-<header class="y2k-wrap">
-  <div class="y2k-grid">
-    <div class="y2k-tile w3 h2"><img src="https://media.giphy.com/media/l3vR9O2bY0H3zO21O/giphy.gif"></div>
-    <div class="y2k-tile"><img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif"></div>
-    <div class="y2k-tile h2"><img src="https://media.giphy.com/media/3oz8xKaR836UJOYeOc/giphy.gif"></div>
-    <div class="y2k-tile"><img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif"></div>
-    <div class="y2k-tile w2"><img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif"></div>
-    <div class="y2k-tile h3"><img src="https://media.giphy.com/media/l3vR6aasfszjfp4Pm/giphy.gif"></div>
-    <div class="y2k-tile"><img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif"></div>
-    <div class="y2k-tile"><img src="https://media.giphy.com/media/3o7btT1T0oPAW9Bfyg/giphy.gif"></div>
+  <!-- banner row -->
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;">
+    <!-- wide banner -->
+    <img src="https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif"
+         alt="y2k banner" style="width:468px;height:60px;object-fit:cover;border:1px solid #ddd;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.12)">
+    <!-- small banner -->
+    <img src="https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif"
+         alt="cat typing banner" style="width:234px;height:60px;object-fit:cover;border:1px solid #ddd;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.12)">
   </div>
-</header>
-<!-- ===== END HEADER COLLAGE ===== -->
+
+  <!-- blinkies -->
+  <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px;">
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+  </div>
+
+  <p style="color:#777;font-size:12px;margin:6px 0 0;">Your daily dose of ✦ Y2K ✦ memes ✦ nostalgia ✦</p>
+</div>
+<!-- ===== /HEADER GIF STRIP ===== -->
 
 
 
@@ -60,40 +53,29 @@
 </div>
 
  
-<!-- ===== Y2K BLOG COLLAGE (complex) ===== -->
-<style>
-  /* only styles this collage section */
-  .y2k-wrap{max-width:900px;margin:28px auto;padding:0 16px}
-  .y2k-head{
-    text-align:center;color:#444;font:600 14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Arial;
-    margin-bottom:10px
-  }
-  .y2k-grid{
-    display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:110px;gap:8px
-  }
-  .y2k-tile img{
-    width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid #ddd;
-    box-shadow:0 3px 12px rgba(0,0,0,.12);display:block
-  }
-  /* bigger spans to get that messy collage feel */
-  .w2{grid-column:span 2}.w3{grid-column:span 3}
-  .h2{grid-row:span 2}.h3{grid-row:span 3}
+<!-- ===== BOTTOM AD STRIP (working) ===== -->
+<div style="max-width:900px;margin:30px auto 0;padding:20px 16px;background:#fff;border-top:3px solid #ccc;text-align:center;">
+  <h3 style="font-family:system-ui;color:#444;margin-bottom:14px;">Sponsored by My Inner Web</h3>
 
-  /* tiny caption bar */
-  .y2k-caption{color:#777;text-align:center;font:12px/1.6 system-ui; margin:10px 0 0}
+  <!-- banner row -->
+  <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:12px;">
+    <a href="#music"><img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif"
+         alt="sparkles banner" style="width:468px;height:60px;object-fit:cover;border:1px solid #ddd;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.12)"></a>
+    <a href="#music"><img src="https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif"
+         alt="rainbow banner" style="width:234px;height:60px;object-fit:cover;border:1px solid #ddd;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.12)"></a>
+  </div>
 
-  /* mobile: 3 columns */
-  @media (max-width:720px){
-    .y2k-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:90px}
-  }
-</style>
+  <!-- blinkies -->
+  <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px;">
+    <img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/l0MYwONBGDS7aPGOk/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" style="width:88px;height:31px;object-fit:cover;image-rendering:pixelated;border:1px solid #eee">
+  </div>
 
-<section class="y2k-wrap">
-  <div class="y2k-head">+ web clutter + y2k + memes + aesthetics +</div>
-
-  <div class="y2k-grid">
-    <!-- All GIFs are from Giphy (embeddable). Replace any later if you want. -->
-    <div class="y2k-tile w3 h2"><img src="
+  <p style="color:#777;font-size:12px;margin:6px 0 0;">Totally not a real ad. But if it were, it’d be awesome.</p>
+</div>
+<!-- ===== /BOTTOM AD STRIP ===== -->
 
 
   
