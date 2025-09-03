@@ -6,21 +6,19 @@
 .glitter {
   position: fixed;
   top: -10px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #ff69b4 40%, transparent 70%);
   border-radius: 50%;
-  opacity: 1;
-  animation: fall linear forwards, sparkle 1.5s infinite;
-  pointer-events: none;
+  opacity: 0.8;
+  animation: fall linear forwards;
 }
 
 @keyframes fall {
   to {
     transform: translateY(100vh);
+    opacity: 0;
   }
-}
-
-@keyframes sparkle {
-  0%, 100% { opacity: 0.3; transform: scale(0.7); }
-  50% { opacity: 1; transform: scale(1.4); }
 }
 
 
@@ -177,35 +175,31 @@
 
  
 </div>
-<script>
+
+ <script>
 function createGlitter() {
   const glitter = document.createElement("div");
   glitter.classList.add("glitter");
 
-  // Random position
+  // Random position & size
   glitter.style.left = Math.random() * 100 + "vw";
-
-  // Random size
-  const size = Math.random() * 6 + 4;
-  glitter.style.width = size + "px";
-  glitter.style.height = size + "px";
-
-  // 🌈 Random rainbow sparkle
-  const hue = Math.floor(Math.random() * 360);
-  glitter.style.background = `radial-gradient(circle, hsl(${hue}, 90%, 60%) 40%, transparent 70%)`;
-
-  // Random fall speed
-  glitter.style.animationDuration = (Math.random() * 3 + 2) + "s, 1.5s";
+  glitter.style.width = glitter.style.height = Math.random() * 6 + 4 + "px";
+  glitter.style.background = 
+    `radial-gradient(circle, hsl(${Math.random() * 360}, 80%, 60%) 40%, transparent 70%)`;
 
   document.body.appendChild(glitter);
 
-  // Clean up after fall
+  // Animation duration
+  glitter.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+  // Remove after falling
   setTimeout(() => glitter.remove(), 5000);
 }
 
 // Keep making glitter
 setInterval(createGlitter, 200);
 </script>
+
 
 </body>
 </html>
