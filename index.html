@@ -17,6 +17,10 @@
       margin-bottom: 25px;
     }
   </style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
 </head>
 
 <body>
@@ -155,6 +159,20 @@
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/gh/nathansearles/jquery.sparkle/jquery.sparkle.min.js"></script>
+<script>
+  $(function() {
+    $('body').sparkle({
+      color: "#ff69b4",   // Hot pink ✨
+      count: 50,          // Number of sparkles
+      overlap: 10,        // Overlapping sparkles
+      speed: 1.5,         // Falling speed
+      minSize: 5,         // Smallest sparkle size
+      maxSize: 10,        // Biggest sparkle size
+      direction: "down"   // Sparkles fall like rain
+    });
+  });
+</script>
 
   
 </body>
